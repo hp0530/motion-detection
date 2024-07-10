@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Surveillance System</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="sec\sur\static\css\style.css">
+</head>
+<body>
+    <div class="hero-section">
+        <h1 class="display-4 animate_animated animate_fadeInDown">Welcome to Home Surveillance System</h1>
+        <p class="lead animate_animated animate_fadeInUp">Your safety, our priority</p>
+        <a href="#features" class="btn btn-lg btn-custom animate_animated animate_fadeInUp">Learn More</a>
+    </div>
+
+    <section id="features" class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 animate_animated animate_fadeInLeft">
+                <h2>Real-time Monitoring</h2>
+                <p>Keep an eye on your home in real-time from anywhere.</p>
+            </div>
+            <div class="col-md-4 animate_animated animate_fadeInUp">
+                <h2>Instant Alerts</h2>
+                <p>Receive instant notifications when something unusual is detected.</p>
+            </div>
+            <div class="col-md-4 animate_animated animate_fadeInRight">
+                <h2>Secure Storage</h2>
+                <p>Your surveillance data is stored securely and is easily accessible.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="check-live" class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 animate_animated animate_zoomIn">
+                <h2>Check Live</h2>
+                <p>Watch live surveillance feeds from your home at any time.</p>
+                <a href="{% url 'home' %}" class="btn btn-lg btn-custom">Go to Live Feed</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="object-detect" class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 animate_animated animate_zoomIn">
+                <h2>Object Detection</h2>
+                <p>Automatically detect and identify objects in the surveillance footage.</p>
+                <a href="{% url 'object_detection' %}" class="btn btn-lg btn-custom">Start Object Detection</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
