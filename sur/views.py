@@ -50,7 +50,7 @@ def send_email_alert(alert_time, image_path, distance):
     smtp_server = 'smtp.office365.com'
     smtp_port = 587
     sender_email = 'homesec0530@outlook.com'  # Replace with your email address
-    sender_password = 'Harsh0530###'  # Replace with your email password
+    sender_password = ''  # Replace with your email password
     recipient_email = 'homes52257@gmail.com'  # Replace with recipient email address
 
     # Create the email
